@@ -1,0 +1,54 @@
+User Stories for Customer:
+
+priority rating
+* - nice to have 
+** - good to have @ optional functionality
+*** - must have @ core functionality
+
+1. As a customer, I want to be able to create, update, read and delete the info on products, their expiry dates and when I want to be reminded. FE & BE ***
+
+2. As a customer, I want to view products so I can know what skincare I have and their expiry dates. FE & BE ***
+
+3. As a customer, I want to receive reminders about my soon-to-expire skincare. BE **
+
+4. As a customer, I want to receive email to remind me about my soon-to-expire skincare. BE ***
+
+5. As a customer, I want to be able to input feedback and ratings for the product. FE & BE *
+
+These user stories provide a clear understanding of the desired functionality and requirements from the customer. They help in prioritizing features, guiding the development process, and ensuring that the application meets the needs of all stakeholders involved in the process.
+
+-------------------
+
+User Stories for Admin:
+
+1. As an admin, I want to 
+
+-------------------
+
+CORE FUNCTIONALITY:
+
+CUSTOMER
+1. View skincare products and their expiry dates
+2. Receive reminders via email
+
+-------------------
+
+DATABASE DESIGN: 
+1. Users (id, username, email, password, created_at, updated_at, is_admin)
+2. Products (id, user_id, product_name, open_date, expiry_date, status, created_at, updated_at)
+
+-------------------
+
+API
+
+Public API - for customer facing features
+1. POST/ register - make new account ✅
+2. POST/ login - login into account ✅
+3. POST/ products - create new product ✅
+4. GET/ products - get all products ✅
+5. PUT/ products - update details of products ✅
+6. DELETE/ products- delete a specific product ✅
+7. GET/ users - get all users ✅
+8. GET/ users/:id - get a specific user ✅
+9. PUT/ users/:id - update a specific user ✅
+10. DELETE/ users/ :id - delete a specific user
