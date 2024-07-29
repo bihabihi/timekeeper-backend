@@ -18,7 +18,7 @@ const app = express();
 const PORT = 4141;
 
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: 'https://timekeeper.pages.dev/'
 }))
 
 app.use(express.json());
