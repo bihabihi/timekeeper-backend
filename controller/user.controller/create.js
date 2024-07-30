@@ -42,7 +42,7 @@ async function createUser (req, res) {
         // const secretKey = "fullstackdeveloperletsgoer";
         // const token = jwt.sign(data, secretKey);
     
-        res.status(200).json({message:"User and Token created"});
+        res.status(200).json({message:"User created"});
         
     } catch (error) {
         console.error(error);
