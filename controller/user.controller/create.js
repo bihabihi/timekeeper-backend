@@ -39,10 +39,10 @@ async function createUser (req, res) {
             email,
             password,
         };
-        const secretKey = "fullstackdeveloperletsgoer";
-        const token = jwt.sign(data, secretKey);
+        // const secretKey = "fullstackdeveloperletsgoer";
+        // const token = jwt.sign(data, secretKey);
     
-        res.status(200).json({message:"User and Token created", token: token});
+        res.status(200).json({message:"User and Token created"});
         
     } catch (error) {
         console.error(error);
