@@ -18,7 +18,8 @@ const app = express();
 const PORT = 4141;
 
 app.use(cors({
-    origin: 'https://timekeeper.pages.dev'
+    // origin: 'https://timekeeper.pages.dev'
+    origin: 'https://seritracker.com'
 }))
 
 app.use(express.json());
